@@ -1,0 +1,37 @@
+{
+  "name": "democomponent",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/democomponent/democomponent.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "./lesser.sh && stencil build --docs --prerender",
+    "start": "./lesser.sh && stencil build --dev --watch --serve --next --no-cache",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "2.5.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@stencil/less": "^1.0.0",
+    "@stencil/postcss": "^2.0.0",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.8",
+    "postcss-replace": "^1.1.3",
+    "tailwindcss": "^2.0.4"
+  }
+}
